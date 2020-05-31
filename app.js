@@ -33,7 +33,7 @@ function win(userChoice, computerChoice) {
     userChoice
   )}${smallUserWord} beats ${convertToWord(
     computerChoice
-  )}${smallCompWord}\u00A0\u00A0\u00A0\u00A0 You win! 🔥😎🥰`;
+  )}${smallCompWord}\u00A0\u00A0\u00A0\u00A0 You win! 🔥😎`;
   userChoice_div.classList.add("green-glow");
   setTimeout(
     () => document.getElementById(userChoice).classList.remove("green-glow"),
@@ -55,7 +55,7 @@ function lose(userChoice, computerChoice) {
     userChoice
   )}${smallUserWord} loses to ${convertToWord(
     computerChoice
-  )}${smallCompWord} \u00A0\u00A0\u00A0\u00A0 You lost... 💩😤🤬`;
+  )}${smallCompWord} \u00A0\u00A0\u00A0\u00A0 You lost... 🤬`;
 
   userChoice_div.classList.add("red-glow");
   setTimeout(
