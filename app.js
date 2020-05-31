@@ -73,7 +73,7 @@ function draw(userChoice, computerChoice) {
     userChoice
   )}${smallUserWord} equals ${convertToWord(
     computerChoice
-  )}${smallCompWord}\u00A0\u00A0\u00A0\u00A0 It's a draw 🌚🙃😬`;
+  )}${smallCompWord}\u00A0\u00A0\u00A0\u00A0 It's a draw 🌚🙃`;
 
   userChoice_div.classList.add("gray-glow");
   setTimeout(
