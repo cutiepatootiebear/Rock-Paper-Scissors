@@ -35,9 +35,10 @@ function win(userChoice, computerChoice) {
     computerChoice
   )}${smallCompWord}\u00A0\u00A0\u00A0\u00A0 You win! 🔥😎🥰`;
   userChoice_div.classList.add("green-glow");
-  setTimeout(function () {
-    document.getElementById(userChoice).classList.remove("green-glow");
-  }, 470);
+  setTimeout(
+    () => document.getElementById(userChoice).classList.remove("green-glow"),
+    470
+  );
   // console.log('userchoice', user)
   // console.log('computer', computer)
 }
@@ -57,9 +58,10 @@ function lose(userChoice, computerChoice) {
   )}${smallCompWord} \u00A0\u00A0\u00A0\u00A0 You lost... 💩😤🤬`;
 
   userChoice_div.classList.add("red-glow");
-  setTimeout(function () {
-    document.getElementById(userChoice).classList.remove("red-glow");
-  }, 470);
+  setTimeout(
+    () => document.getElementById(userChoice).classList.remove("red-glow"),
+    470
+  );
 }
 
 function draw(userChoice, computerChoice) {
@@ -74,9 +76,10 @@ function draw(userChoice, computerChoice) {
   )}${smallCompWord}\u00A0\u00A0\u00A0\u00A0 It's a draw 🌚🙃😬`;
 
   userChoice_div.classList.add("gray-glow");
-  setTimeout(function () {
-    document.getElementById(userChoice).classList.remove("gray-glow");
-  }, 400);
+  setTimeout(
+    () => document.getElementById(userChoice).classList.remove("gray-glow"),
+    400
+  );
   console.log("draw");
 }
 
@@ -108,20 +111,14 @@ function game(userChoice) {
 }
 
 function main() {
-  rock_div.addEventListener("click", function () {
-    // console.log("clicked on rock");
-    game("r");
-  });
+  rock_div.addEventListener("click", () => game("r"));
+  // console.log("clicked on rock");
 
-  paper_div.addEventListener("click", function () {
-    // console.log("clicked on paper_div");
-    game("p");
-  });
+  paper_div.addEventListener("click", () => game("p"));
+  // console.log("clicked on paper_div");
 
-  scissors_div.addEventListener("click", function () {
-    // console.log("clicked on scissors_div");
-    game("s");
-  });
+  scissors_div.addEventListener("click", () => game("s"));
+  // console.log("clicked on scissors_div");
 }
 
 main();
