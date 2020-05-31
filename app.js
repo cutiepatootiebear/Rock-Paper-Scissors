@@ -37,7 +37,7 @@ function win(userChoice, computerChoice) {
   userChoice_div.classList.add("green-glow");
   setTimeout(function () {
     document.getElementById(userChoice).classList.remove("green-glow");
-  }, 400);
+  }, 470);
   // console.log('userchoice', user)
   // console.log('computer', computer)
 }
@@ -59,7 +59,7 @@ function lose(userChoice, computerChoice) {
   userChoice_div.classList.add("red-glow");
   setTimeout(function () {
     document.getElementById(userChoice).classList.remove("red-glow");
-  }, 400);
+  }, 470);
 }
 
 function draw(userChoice, computerChoice) {
